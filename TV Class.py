@@ -4,8 +4,10 @@
 
 #Create class named TV
 class Television:
-    def __init__(self, turn_on, turn_off, get_channel, set_channel, 
-                get_volume, set_volume, channel_up, channel_down, volume_up, volume_down):
-        self.turn_on = bool
-        
+    def __init__(self, turn_on):
+        self.turn_on = turn_on
+
 #Test Driver program TestTV
+television_1 = Television('On')
+
+print(television_1.turn_on)
