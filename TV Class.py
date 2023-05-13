@@ -15,9 +15,10 @@ class TV:
         
 television_1 = TV()
 television_1.set_channel(49)
-television_1.set_volume_level(7)
+television_1.set_volume_level(46)
 television_1.show_channel()
 television_1.show_volume_level()
+print(television_1.show_channel)
 
 
         
