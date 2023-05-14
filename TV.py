@@ -22,13 +22,25 @@ class TV:
         if 1 <= channel <= 120:
             self.channel = channel
 
+    def channel_tv_up(self, channel):
+        if 1 <= channel <= 120:
+            self.channel += 1
+    
+    def channel_tv_down(self, channel):
+        if 1 <= channel <= 120:
+            self.channel -= 1
+
     def get_tv_volume(self):
         return self.get_tv_volume
     
     #This means that the current volume will be changed if new channel is within the range 1-7
     def tv_volume_up(self, volume):
         if 1 <= volume >= 7:
-            self.get_tv_volume = volume
+            self.get_tv_volume += 1
+    
+    def tv_volume_down(self, volume):
+        if 1 <= volume >= 7:
+            self.get_tv_volume -= 1
     
 
 
