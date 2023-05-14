@@ -3,11 +3,11 @@
 #May 13, 2023
 
 #Create class named TV
-from TV import get_channel
+from TV import add
 
-tv_channel = get_channel(23)
-print (tv_channel)
-        
+    
+sum = add(12,321)
+print(sum)
 
 
 
