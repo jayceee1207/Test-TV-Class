@@ -7,7 +7,7 @@
 from TV import TV
 
 
-class TVTest:
+class TestTV:
 
     def __init__ (self):
 
@@ -25,5 +25,7 @@ class TVTest:
         print ("tv2's channel is", self.tv2.get_tv_channel(), "and volume level is", self.tv2.get_tv_volume())
 
 
-
+if __name__ == '__main__':
+    test = TestTV()
+    test.result()
 
