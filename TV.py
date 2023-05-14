@@ -1,3 +1,3 @@
 
 def set_channel():
-    print("Channel")
+    return(65)

@@ -3,10 +3,10 @@
 #May 13, 2023
 
 #Create class named TV
-import TV
-        
-TV.set_channel()
+from TV import get_channel
 
+tv_channel = get_channel(23)
+print (tv_channel)
         
 
 
