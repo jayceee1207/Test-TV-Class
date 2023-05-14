@@ -1,13 +1,19 @@
 #Make a class named Class TV
 
 class TV:
+
+    def __init__(self):
+        self.channel = 1
+        self.volume_level = 1
+        self.on = False
+
     def turn_on_tv(self):
-        self.turn_on_tv = True
+        self.on = True
     
     def turn_off_tv(self):
-        self.turn_off_tv = False    
+        self.off = False    
     
     def get_tv_channel(self):
-        return self.get_tv_channel
+        return self.channel
 
         
