@@ -10,22 +10,19 @@ from TV import TV
 class TestTV:
 
     def __init__ (self):
+        
+        tv_1 = TV()
+        tv_1.turn_on_tv()
+        tv_1.get_tv_channel(23)
+        tv_1.get_tv_channel(5)
 
-        self.tv1 = TV()
-        self.tv2 = TV()
+        tv_2 = TV()
+        tv_2.turn_on_tv()
+        tv_2.get_tv_channel(102)
+        tv_2.get_tv_channel(7)
 
-        self.tv1.get_tv_channel(23)
-        self.tv1.get_tv_channel(5)
-
-        self.tv2.get_tv_channel(110)
-        self.tv2.get_tv_channel(7)
-
-    def result(self):
-        print ("tv1's channel is", self.tv1.get_tv_channel(), "and volume level is", self.tv1.get_tv_volume())
-        print ("tv2's channel is", self.tv2.get_tv_channel(), "and volume level is", self.tv2.get_tv_volume())
+        print ("tv1's channel is", tv_1.get_tv_channel(), "and volume level is", tv_1.get_tv_volume())
+        print ("tv2's channel is", tv_2.get_tv_channel(), "and volume level is", tv_2.get_tv_volume())
 
 
-if __name__ == '__main__':
-    test = TestTV()
-    test.result()
-
+    
