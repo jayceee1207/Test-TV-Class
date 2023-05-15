@@ -7,23 +7,18 @@
 from TV import TV
 
 
+tv_1 = TV()
+tv_1.turn_on()
+tv_1.set_channel(12)
+tv_1.volume_up(3)
 
-def main():
-    
-    tv_1 = TV()
-    tv_1.turn_on_tv()
-    tv_1.change_tv_channel(2)
-    tv_1.change_tv_volume(1)
+tv_2 = TV()
+tv_2.turn_on()
+tv_2.set_channel(31)
+tv_2.volume_up(4)
 
-    tv_2 = TV()
-    tv_2.turn_on_tv()
-    tv_2.change_tv_channel(13)
-    tv_2.change_tv_volume(3)
-
-    print ("tv1's channel is", tv_1.change_tv_channel(), "and volume level is", tv_1.change_tv_volume())
-    print ("tv2's channel is", tv_2.change_tv_channel(), "and volume level is", tv_2.change_tv_volume())
-
+print("Tv1-[Status]:")
+tv1.display_result()
 
     
-if __name__ == "__main__":
-    main()
+
