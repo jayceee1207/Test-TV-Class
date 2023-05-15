@@ -21,8 +21,10 @@ class TV:
         self.volume = 0
 
     #This function returns a boolean expression True if the TV is on.
-    def turn_on_tv(self):
-        self.on = True
+    def turn_on(self):
+        self.isOn = not self.isOn
+
+        
     
     #This function returns a boolean expression False if the TV is on.
     def turn_off_tv(self):
