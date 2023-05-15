@@ -23,8 +23,6 @@ class TV:
     #This function returns a boolean expression True if the TV is on.
     def turn_on(self):
         self.isOn = not self.isOn
-
-        
     
     #This function returns a boolean expression False if the TV is on.
     def turn_off_tv(self):
@@ -56,15 +54,18 @@ class TV:
             self.volume_level = volume_level
     
     #This function increment the channel by one. If previous volume is 3, the new channel will be 4.
-    def tv_volume_up(self):
-        if self.turn_on_tv and 1 <= volume >= 7:
-            self.get_tv_volume += 1
+    def volume_up(self):
+        if not self.isOn:
+            return
+        if self.volume < self.volume_maximum:
+            self.volume += 1
     
     #This function decrement the channel by one. If previous volume is 3, the new channel will be 2.
-    def tv_volume_down(self):
-        if self.turn_on_tv and 1 <= volume >= 7:
-            self.get_tv_volume -= 1
-    
+    def volume_up(self):
+        if not self.isOn:
+            return
+        if self.volume > self.volume_maximum:
+            self.volume -= 1
 
 
 
